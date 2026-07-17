@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHOSIS DIGITAL PRODUCTS | Main Creative Asset Hub & Storefront</title>
+  <meta name="description" content="Welcome to the central storefront for TECHOSIS DIGITAL PRODUCTS. Download premium, print-ready digital art collections for cup wraps, streetwear apparel, wall paintings, and custom vinyl decals.">
+  <link rel="icon" type="image/png" href="companylogo.png">
+  <link rel="stylesheet" href="index.css?v=1.9">
+  <script>
+    // Initialize theme from local storage
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('hub-theme') || 'light');
+  </script>
+</head>
+<body>
+
+  <!-- --- Header / Navbar --- -->
+  <header class="header">
+    <div class="container nav-flex">
+      <a href="#" class="logo">
+        <img src="companylogo.png" alt="Techosis Logo" class="logo-img">
+        <span class="logo-text">TECHOSIS DIGITAL PRODUCTS</span>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#master-bundle" class="nav-link">4-in-1 Bundle</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#faqs" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+          <!-- Moon Icon -->
+          <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <!-- Sun Icon -->
+          <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="#master-bundle" class="btn btn-accent btn-sm header-cta">Get Master Bundle</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- --- Hero Section --- -->
+  <section class="hero">
+    <div class="container hero-grid grid">
+      <div class="hero-content">
+        <span class="badge reveal-on-scroll">Central Creative Hub</span>
+        <h1 class="hero-title reveal-on-scroll stagger-1">
+          The Ultimate Vault of <br><span class="text-gradient">Premium Print Assets</span>
+        </h1>
+        <p class="hero-description reveal-on-scroll stagger-2">
+          Instantly download over 2,000+ professional digital vector art files and transparent sublimation graphics. One purchase secures lifetime commercial usage rights for apparel, tumblers, decals, and gallery frames.
+        </p>
+        <div class="hero-ctas reveal-on-scroll stagger-3">
+          <a href="#master-bundle" class="btn btn-accent btn-lg btn-animate-shimmer">Get 4-in-1 Master Bundle — $20</a>
+          <a href="#collections" class="btn btn-outline btn-lg">Explore Sub-Stores</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-on-scroll stagger-4">
+        <!-- Layered visualizer showing all four products floating creatively -->
+        <div class="layered-showcase">
+          <!-- Wall Art Preview -->
+          <div class="showcase-item sc-wall">
+            <img src="wall-Flower%20Pot%20(8).png" alt="Wall Art Preview">
+          </div>
+          
+          <!-- T-Shirt Art Preview -->
+          <div class="showcase-item sc-tshirt">
+            <img src="tshirt-download%20(10).jpg" alt="T-Shirt Art Preview">
+          </div>
+
+          <!-- Cup Wrap Preview -->
+          <div class="showcase-item sc-cup">
+            <img src="cup-download%20-%202026-07-02T151241.128.jpg" alt="Cup Art Preview">
+          </div>
+
+          <!-- Sticker Preview -->
+          <div class="showcase-item sc-sticker">
+            <img src="sticker-download%20-%202026-07-03T111918.119.jpg" alt="Sticker Preview">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Core Stats Bar --- -->
+  <section class="stats-bar">
+    <div class="container stats-flex">
+      <div class="stat-card">
+        <span class="stat-num">2,000+</span>
+        <span class="stat-label">Unique Artworks</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">300 DPI</span>
+        <span class="stat-label">Ultra-High Resolution</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">Unlimited</span>
+        <span class="stat-label">Commercial Licenses</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">Instant</span>
+        <span class="stat-label">Direct Digital Access</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 4-in-1 Mega Master Bundle Offer Section --- -->
+  <section id="master-bundle" class="section section-master-offer">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge badge-accent">Best Value Deal</span>
+      <h2 class="section-title">The Complete 4-in-1 Master Bundle</h2>
+      <p class="section-subtitle">Unlock all four designer collections at once. Over 2,000+ total files compiled cleanly inside categorized asset folders.</p>
+    </div>
+
+    <div class="container">
+      <div class="bundle-checkout-card reveal-on-scroll">
+        <!-- Details Column -->
+        <div class="bundle-details-pane">
+          <div class="brand-tag">
+            <img src="companylogo.png" alt="Techosis Logo" class="brand-mini-logo">
+            <div>
+              <h3>Techosis Master Package</h3>
+              <p>Printable Creative Asset Vault</p>
+            </div>
+          </div>
+          
+          <p class="bundle-pitch">
+            One single payment grants you direct access to our entire creative library. Ideal for physical print shops, print-on-demand sellers, home crafters, and retail businesses.
+          </p>
+
+          <div class="bundle-contents-list">
+            <div class="content-item">
+              <span class="bullet-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <div>
+                <strong>500+ Printable Wall Art Collection:</strong> Sized for 25+ standard frames.
+              </div>
+            </div>
+            <div class="content-item">
+              <span class="bullet-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <div>
+                <strong>500+ T-Shirt Printable streetwear vectors:</strong> SVG and transparent PNG formats.
+              </div>
+            </div>
+            <div class="content-item">
+              <span class="bullet-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <div>
+                <strong>500+ Sublimation Cup & Tumbler Wraps:</strong> Edge-to-edge full bleed guides.
+              </div>
+            </div>
+            <div class="content-item">
+              <span class="bullet-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <div>
+                <strong>500+ Cut-Ready Vinyl Sticker PNGs:</strong> 3mm pre-calculated white borders.
+              </div>
+            </div>
+            <div class="content-item font-accent">
+              <span class="bullet-check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <div>
+                <strong>Unlimited Commercial License:</strong> Sell print runs commercially forever.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout Action Column -->
+        <div class="bundle-action-pane">
+          <!-- Mini Collages of all 4 preview items -->
+          <div class="master-preview-collage">
+            <div class="coll-item ci-1"><img src="cup-download%20-%202026-07-02T151727.785.jpg" alt="Cup Art Preview"></div>
+            <div class="coll-item ci-2"><img src="sticker-download%20-%202026-07-03T121035.107.jpg" alt="Sticker Preview"></div>
+            <div class="coll-item ci-3"><img src="wall-Flower%20Pot%20(1).png" alt="Wall Art Preview"></div>
+            <div class="coll-item ci-4"><img src="tshirt-download%20(10).jpg" alt="T-Shirt Art Preview"></div>
+          </div>
+
+          <div class="price-container">
+            <div class="price-strike-group">
+              <span class="price-old">$40</span>
+              <span class="price-new">$20</span>
+              <span class="price-tag-discount">50% OFF</span>
+            </div>
+            <p class="price-caption">One-Time Payment &bull; Instant Storefront Download</p>
+          </div>
+
+          <table class="specs-table">
+            <tr>
+              <td>Format Compatibility:</td>
+              <td>SVG, PNG (300 DPI), PDF</td>
+            </tr>
+            <tr>
+              <td>Total File Size:</td>
+              <td>400MB</td>
+            </tr>
+            <tr>
+              <td>License Coverage:</td>
+              <td>Unlimited Physical Sales</td>
+            </tr>
+            <tr>
+              <td>Delivery:</td>
+              <td style="color: #4CAF50; font-weight: 700;">Instant Direct Download</td>
+            </tr>
+          </table>
+
+          <a href="https://techosisdesigns.gumroad.com/l/all-in-one-print-design-bundle" target="_blank" class="btn btn-accent btn-lg btn-full pulse-button text-center">Buy 4-in-1 Master Bundle</a>
+
+          <div class="checkout-footer-security">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span>Secure SSL Encrypted Checkout</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Featured Sub-Collections Section --- -->
+  <section id="collections" class="section section-collections">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge">Explore the Sub-Stores</span>
+      <h2 class="section-title">Select Individual Collections</h2>
+      <p class="section-subtitle">Looking for specific products? Explore and shop our individual design libraries starting at just $10 each.</p>
+    </div>
+
+    <div class="container collections-grid grid">
+      <!-- Collection 1: Wall Art -->
+      <div class="collection-card reveal-on-scroll stagger-1">
+        <div class="card-image-box">
+          <img src="wall-Flower%20Pot%20(1).png" alt="Printable Wall Art Preview" class="card-main-img">
+          <div class="card-tag-badge">500+ Designs</div>
+        </div>
+        <div class="card-info">
+          <h3>Printable Wall Decor</h3>
+          <p class="card-desc">
+            Premium gallery art prints, modern abstract illustrations, nature layouts, and flower pot watercolor collections. Pre-formatted for 25+ frame sizes.
+          </p>
+          <div class="card-footer-flex">
+            <a href="wall.html" class="btn btn-outline btn-sm">Browse Collection</a>
+            <div class="card-price-group">
+              <span class="card-price-old">$20</span>
+              <span class="card-price-new">$10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 2: T-Shirt Art -->
+      <div class="collection-card reveal-on-scroll stagger-2">
+        <div class="card-image-box">
+          <img src="tshirt-download%20(1).jpg" alt="Streetwear Apparel Preview" class="card-main-img">
+          <div class="card-tag-badge">500+ Designs</div>
+        </div>
+        <div class="card-info">
+          <h3>T-Shirt Streetwear Art</h3>
+          <p class="card-desc">
+            Streetwear graphics, retro vintage emblems, cyber pop elements, and minimalist vectors. Ready-to-print SVG vector formats and high-DPI transparent PNGs.
+          </p>
+          <div class="card-footer-flex">
+            <a href="tshirt.html" class="btn btn-outline btn-sm">Browse Collection</a>
+            <div class="card-price-group">
+              <span class="card-price-old">$20</span>
+              <span class="card-price-new">$10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 3: Cup Art -->
+      <div class="collection-card reveal-on-scroll stagger-3">
+        <div class="card-image-box">
+          <img src="cup-download%20-%202026-07-02T151727.785.jpg" alt="Printable Cup Art Preview" class="card-main-img">
+          <div class="card-tag-badge">500+ Designs</div>
+        </div>
+        <div class="card-info">
+          <h3>Printable Tumbler Wraps</h3>
+          <p class="card-desc">
+            Sublimation tumbler wraps, mug wraps, and cup templates. Full bleed edge-to-edge sizing matching skinny 20oz tumblers and classic ceramics.
+          </p>
+          <div class="card-footer-flex">
+            <a href="cup.html" class="btn btn-outline btn-sm">Browse Collection</a>
+            <div class="card-price-group">
+              <span class="card-price-old">$20</span>
+              <span class="card-price-new">$10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 4: Sticker Art -->
+      <div class="collection-card reveal-on-scroll stagger-4">
+        <div class="card-image-box">
+          <img src="sticker-download%20-%202026-07-03T121035.107.jpg" alt="Printable Stickers Preview" class="card-main-img">
+          <div class="card-tag-badge">500+ Designs</div>
+        </div>
+        <div class="card-info">
+          <h3>Printable Vinyl Stickers</h3>
+          <p class="card-desc">
+            Transparent background vinyl decal graphics, planner inserts, and cute kawaii templates. Every design is pre-rendered with a 3mm cut outline.
+          </p>
+          <div class="card-footer-flex">
+            <a href="stickers.html" class="btn btn-outline btn-sm">Browse Collection</a>
+            <div class="card-price-group">
+              <span class="card-price-old">$20</span>
+              <span class="card-price-new">$10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Why Choose Us / Customer Benefits --- -->
+  <section id="benefits" class="section section-secondary">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge">The Techosis Standard</span>
+      <h2 class="section-title">Built For Conversions & Quality</h2>
+      <p class="section-subtitle">Why creators, physical sellers, and print professionals rely on our design systems.</p>
+    </div>
+
+    <div class="container benefits-grid grid">
+      <!-- Benefit 1 -->
+      <div class="benefit-card reveal-on-scroll stagger-1">
+        <div class="benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        </div>
+        <h3>Instant Digital Delivery</h3>
+        <p>No email wait loops or expired download links. Direct checkout grants immediate access to the secure cloud repository on the confirmation page.</p>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div class="benefit-card reveal-on-scroll stagger-2">
+        <div class="benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </div>
+        <h3>Commercial Printing License</h3>
+        <p>Print and sell physical cups, shirts, sticker sheets, and framed canvas prints on Etsy, Shopify, or in physical retail stores. No royalties required.</p>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div class="benefit-card reveal-on-scroll stagger-3">
+        <div class="benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        </div>
+        <h3>300 DPI Production Quality</h3>
+        <p>Expertly optimized transparent PNG files, editable vector formats (SVGs/PDFs), and high-contrast cut lines ready for high-fidelity print runs.</p>
+      </div>
+
+      <!-- Benefit 4 -->
+      <div class="benefit-card reveal-on-scroll stagger-4">
+        <div class="benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+        </div>
+        <h3>Free Lifetime Asset Updates</h3>
+        <p>Whenever we add new graphic assets, decals, t-shirt layouts, or tumbler wraps to any of the folders, you receive the updates 100% free.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- How Digital Downloads Work --- -->
+  <section id="how-it-works" class="section">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge">Simple Process</span>
+      <h2 class="section-title">How To Print and Use</h2>
+      <p class="section-subtitle">Get professional custom assets from home in three simple steps.</p>
+    </div>
+
+    <div class="container step-grid grid">
+      <!-- Step 1 -->
+      <div class="step-card reveal-on-scroll stagger-1">
+        <span class="step-num-big">01</span>
+        <div class="step-content">
+          <h3>Download Instantly</h3>
+          <p>Complete checkout to instantly unlock high-resolution vector and transparent PNG folders directly on the confirmation screen.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card reveal-on-scroll stagger-2">
+        <span class="step-num-big">02</span>
+        <div class="step-content">
+          <h3>Print at Home</h3>
+          <p>Print the designs on standard paper, cardstock, sticker vinyl, or sublimation wraps using your home printer or local services.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card reveal-on-scroll stagger-3">
+        <span class="step-num-big">03</span>
+        <div class="step-content">
+          <h3>Use Anywhere</h3>
+          <p>Apply wraps to tumblers, print on apparel, stick decals on planners/laptops, or frame wall arts for gallery displays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- FAQ Section --- -->
+  <section id="faqs" class="section section-secondary">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Have questions? We have answers to help you start crafting.</p>
+    </div>
+
+    <div class="container faq-container">
+      <!-- FAQ 1 -->
+      <div class="faq-item">
+        <button class="faq-trigger">
+          <span class="faq-question">What is included in the 4-in-1 Master Bundle?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            The Master Bundle includes full folders for all four sub-websites: 500+ Wall Art prints, 500+ T-Shirt vectors/PNGs, 500+ Sublimation Tumbler wraps, and 500+ outline sticker cut files. It covers over 2,000+ files.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <button class="faq-trigger">
+          <span class="faq-question">What file formats are provided?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            We provide production-grade, transparent background PNG files at 300 DPI, editable vector file configurations (SVGs/PDFs) for resizing without quality loss, and pre-formatted print templates.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <button class="faq-trigger">
+          <span class="faq-question">How does the commercial license work?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            You receive a lifetime commercial license allowing you to sell physical products (shirts, tumblers, decals, framed wall arts) printed with these designs. Reselling, distributing, or sharing the digital files themselves is strictly prohibited.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <button class="faq-trigger">
+          <span class="faq-question">How do I receive the files?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            Immediately after checkout, you are redirected to the confirmation screen containing direct download buttons for the secure cloud storage folders. You can access them at any time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <a href="#" class="logo footer-logo">
+        <img src="companylogo.png" alt="Techosis Logo" class="logo-img">
+        <span class="logo-text">TECHOSIS DIGITAL PRODUCTS</span>
+      </a>
+
+      <p class="footer-desc">
+        Premium design system storefront for digital creators, crafters, and printing studios. Instantly downloadable assets ready to print and use commercially.
+        <br>
+        Contact Support: <a href="mailto:techosis99@gmail.com" class="support-email">techosis99@gmail.com</a>
+      </p>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Techosis Digital Products. All rights reserved. Professional print assets, tumbler wraps, t-shirt vectors, decals, and wall art.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

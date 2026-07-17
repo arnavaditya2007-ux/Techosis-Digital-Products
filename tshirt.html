@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHOSIS DIGITAL PRODUCTS | 500+ T-Shirt Printable Graphic Arts Pack</title>
+  <meta name="description" content="Get instant access to 500+ streetwear, retro, and minimal printable T-shirt graphic designs. Commercial license included. High-res transparent PNGs & vectors.">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="tshirt.css?v=1.4">
+  
+  <!-- Prevent Dark Flash Script -->
+  <script>
+    const theme = localStorage.getItem('tshirt-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+  </script>
+</head>
+<body>
+
+  <!-- --- Scroll Progress Bar --- -->
+  <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+  <!-- --- Header / Navigation Bar --- -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="companylogo.png" alt="Techosis Digital Products Logo" class="logo-img">
+        <span class="logo-text">TECHOSIS DIGITAL PRODUCTS</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#visualizer" class="nav-link">Visualizer</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#purchase" class="nav-link btn-nav">Get the Pack</a>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <!-- Moon Icon -->
+          <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <!-- Sun Icon -->
+          <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- --- Hero Section --- -->
+  <section class="hero">
+    <div class="container hero-grid grid">
+      <div class="hero-text-content reveal-left">
+        <h1 class="hero-title">500+ Ready-To-Print <br><span class="text-glow">T-Shirt Artworks</span></h1>
+        <p class="hero-subtitle">
+          Accelerate your apparel brand. High-resolution transparent PNG designs and vector files ready for print-on-demand, silk screening, or direct-to-garment printing. Full commercial rights included.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="#purchase" class="btn btn-primary btn-lg btn-animate-shimmer">Secure the Pack - $10</a>
+          <a href="#collections" class="btn btn-outline btn-lg">Browse Graphics</a>
+        </div>
+        
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <strong>300 DPI</strong>
+            <span>Print-Ready PNG/SVG</span>
+          </div>
+          <div class="highlight-item">
+            <strong>Commercial</strong>
+            <span>Sell Unlimited Merch</span>
+          </div>
+          <div class="highlight-item">
+            <strong>6 Categories</strong>
+            <span>Curated Style Folders</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-showcase reveal-right">
+        <!-- Floating street poster styled collage of stock images -->
+        <div class="poster-collage">
+          <div class="poster poster-1">
+            <img src="tshirt-download (1).jpg" alt="Featured T-shirt Graphic 1">
+          </div>
+          <div class="poster poster-2">
+            <img src="tshirt-download (2).jpg" alt="Featured T-shirt Graphic 2">
+          </div>
+          <div class="poster poster-3">
+            <img src="tshirt-download (3).jpg" alt="Featured T-shirt Graphic 3">
+          </div>
+          <!-- Decorative Urban Tech Grid -->
+          <div class="tech-lines"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Featured Collections Section --- -->
+  <section id="collections" class="section section-secondary">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge-tag">Design Library</span>
+      <h2 class="section-title">Explore Featured Collections</h2>
+      <p class="section-subtitle">Browse through 6 curated themes designed to stand out on physical garments.</p>
+    </div>
+
+    <!-- Tabs Menu -->
+    <div class="container tabs-container reveal-on-scroll">
+      <button class="tab-btn active" data-category="streetwear">Streetwear & Cyberpunk</button>
+      <button class="tab-btn" data-category="retro">Retro Vintage</button>
+      <button class="tab-btn" data-category="anime">Anime Vectors</button>
+      <button class="tab-btn" data-category="minimalist">Minimal & Line Art</button>
+      <button class="tab-btn" data-category="grunge">Skulls & Grunge</button>
+    </div>
+
+    <!-- Dynamic Collection Grid -->
+    <div class="container collection-grid grid reveal-on-scroll stagger-1" id="gallery-grid">
+      <!-- Generated dynamically in index.js -->
+    </div>
+  </section>
+
+  <!-- --- Interactive Apparel Visualizer Section --- -->
+  <section id="visualizer" class="section visualizer-section">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge-tag">Interactive Preview</span>
+      <h2 class="section-title">Design Canvas Studio</h2>
+      <p class="section-subtitle">Select a design and adjust layout sizing to visualize print proportions.</p>
+    </div>
+
+    <div class="container visualizer-container grid">
+      <!-- Visualizer Preview (Left Pane) -->
+      <div class="visualizer-preview-pane reveal-left">
+        <!-- The SVG Mockup container -->
+        <div class="tee-mockup-wrapper">
+          <div class="tee-shirt-canvas" id="tee-canvas">
+            <!-- Shadow/Volume Overlay -->
+            <div class="tee-shadows"></div>
+            <!-- Texture Overlay -->
+            <div class="tee-texture"></div>
+            <!-- Graphic Print Area -->
+            <div class="tee-print-zone" id="tee-print-zone">
+              <img src="tshirt-download (1).jpg" id="visualizer-selected-art" class="visualizer-art-image" alt="Print Preview">
+              <div class="print-boundary-indicator"><span>PRINT AREA</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls Panel (Right Pane) -->
+      <div class="visualizer-controls-pane reveal-right">
+        <!-- 1. Graphic Swapper -->
+        <div class="control-group">
+          <label class="control-label">1. Select Graphic Design</label>
+          <div class="graphic-selector-grid" id="visualizer-art-picker">
+            <!-- Populated dynamically in index.js -->
+          </div>
+        </div>
+
+        <!-- 2. Placement Sizing -->
+        <div class="control-group">
+          <label class="control-label">2. Scale & Sizing</label>
+          <div class="layout-selectors">
+            <button class="layout-btn active" data-layout="standard">Standard Size</button>
+            <button class="layout-btn" data-layout="oversized">Oversized / Poster</button>
+            <button class="layout-btn" data-layout="pocket">Minimalist Accent</button>
+          </div>
+        </div>
+
+        <!-- Action CTA -->
+        <div class="control-group visualizer-cta-group">
+          <a href="#purchase" class="btn btn-primary btn-full btn-animate-shimmer">Get This Entire Design Library</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Key Inclusions & Benefits --- -->
+  <section id="benefits" class="section section-secondary">
+    <div class="container grid benefits-grid">
+      <div class="benefits-text-pane reveal-left">
+        <span class="badge-tag badge-cyan">Pack Highlights</span>
+        <h2 class="section-title">Designed Specially for Custom Apparel Brands</h2>
+        <p class="section-subtitle-left">
+          Creating apparel lines from scratch is expensive and time-consuming. We provide a full studio catalog that helps you launch collections in hours instead of months.
+        </p>
+        
+        <ul class="benefits-bullets">
+          <li>
+            <div class="bullet-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <strong>High-Res 300 DPI Transparent PNGs</strong>
+              <p>Clean margins, absolute transparency, optimized for direct-to-garment (DTG) or transfer sheet prints.</p>
+            </div>
+          </li>
+          <li>
+            <div class="bullet-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <strong>Scalable SVG/Vector Source Formats</strong>
+              <p>Scale designs infinitely without pixelation or detail loss. Perfect for screen printing separations.</p>
+            </div>
+          </li>
+          <li>
+            <div class="bullet-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <strong>Full Commercial Sell License</strong>
+              <p>Sell physical T-shirts, hoodies, mugs, and apparel without royalty payments or copyright strikes.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="benefits-cards-pane reveal-right">
+        <div class="card-grid-inner grid">
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h4>Instant Access</h4>
+            <p>Download immediately via secure link provided right on the confirmation page after successful checkout.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h4>Perfect Folders</h4>
+            <p>Clean layout sorted by aesthetic categories so you find the perfect design in seconds.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 4L3 9h3v11h12V9h3L18 4h-4a2 2 0 0 0-4 0H6z"></path>
+              </svg>
+            </div>
+            <h4>POD Compatible</h4>
+            <p>Drag and drop directly into print-on-demand services or mockup builders.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 4v6h-6"></path>
+                <path d="M1 20v-6h6"></path>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+              </svg>
+            </div>
+            <h4>Free Lifetime Updates</h4>
+            <p>Gain access to any new graphic additions to this apparel pack in the future for free.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- How It Works Section --- -->
+  <section id="how-it-works" class="section">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge-tag">Simple Process</span>
+      <h2 class="section-title">How To Print and Use</h2>
+      <p class="section-subtitle">Going from digital files to custom premium apparel takes three simple steps.</p>
+    </div>
+
+    <div class="container step-grid grid">
+      <!-- Step 1 -->
+      <div class="step-card reveal-on-scroll stagger-1">
+        <span class="step-num-big">01</span>
+        <div class="step-content">
+          <h3 class="step-title">Download Instantly</h3>
+          <p class="step-desc">
+            Get high-resolution, transparent background graphics immediately on the checkout page after purchase.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card reveal-on-scroll stagger-2">
+        <span class="step-num-big">02</span>
+        <div class="step-content">
+          <h3 class="step-title">Print at Home</h3>
+          <p class="step-desc">
+            Print on transfer papers using your home printer, or send to local and online print services.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card reveal-on-scroll stagger-3">
+        <span class="step-num-big">03</span>
+        <div class="step-content">
+          <h3 class="step-title">Use Anywhere</h3>
+          <p class="step-desc">
+            Apply to your shirts, sweatshirts, bags, or other garments, and wear or sell them commercially.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Pricing / Purchase Section --- -->
+  <section id="purchase" class="section section-secondary purchase-section">
+    <div class="container purchase-card-container reveal-on-scroll">
+      <div class="purchase-grid grid">
+        <!-- Offer Left -->
+        <div class="purchase-details">
+          <span class="badge-tag">Limited Time Launch Offer</span>
+          <h2 class="purchase-title">Own the Entire Apparel Graphic Suite</h2>
+          <p class="purchase-desc">
+            Launch your print-on-demand business, refresh your streetwear brand, or print custom tees for yourself. Get all 500+ premium graphics now.
+          </p>
+          
+          <div class="inclusions-checklist">
+            <div class="check-item">
+              <span class="check-tick">✓</span>
+              <span>500+ Premium T-Shirt Graphic Artworks</span>
+            </div>
+            <div class="check-item">
+              <span class="check-tick">✓</span>
+              <span>Transparent PNGs (300 DPI) & Scalable SVGs</span>
+            </div>
+            <div class="check-item">
+              <span class="check-tick">✓</span>
+              <span>Unlimited Lifetime Commercial Merchandise License</span>
+            </div>
+            <div class="check-item">
+              <span class="check-tick">✓</span>
+              <span>Clean Folder Architecture & Drag-and-Drop Mockups</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout Card Right -->
+        <div class="checkout-pane">
+          <div class="price-bubble-wrap">
+            <span class="old-price">$20</span>
+            <span class="new-price">$10</span>
+            <span class="save-badge">50% OFF</span>
+          </div>
+          
+          <p class="checkout-tagline">One-time purchase. Lifetime commercial rights.</p>
+          
+          <a href="https://techosisdesigns.gumroad.com/l/printabletshirtdesigns" target="_blank" class="btn btn-primary btn-full btn-lg btn-animate-shimmer checkout-btn text-center" style="text-decoration: none;">
+            Get Instant Access Now
+          </a>
+          
+          <div class="checkout-footer">
+            <div class="security-badges">
+              <span>Secure checkout</span>
+              <span>•</span>
+              <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 3px; color: var(--color-accent);"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> Instant Download</span>
+            </div>
+            <div class="payment-methods">
+              <svg width="24" height="16" viewBox="0 0 24 16" fill="currentColor"><rect width="24" height="16" rx="2" fill="#003087"/><path d="M8 5h3c1 0 1.5.5 1.3 1.5S11 8 10 8H8.7l-.3 1.5H7.2L8 5z" fill="#0079C1"/></svg>
+              <svg width="24" height="16" viewBox="0 0 24 16" fill="currentColor"><rect width="24" height="16" rx="2" fill="#F6A600"/><circle cx="9" cy="8" r="5" fill="#EB001B" opacity="0.9"/><circle cx="15" cy="8" r="5" fill="#F79E1B" opacity="0.9"/></svg>
+              <svg width="24" height="16" viewBox="0 0 24 16" fill="currentColor"><rect width="24" height="16" rx="2" fill="#0070BA"/><path d="M6 4h5.5c1 0 1.8.8 1.8 1.8v.4c0 1-.8 1.8-1.8 1.8H7.8v3.5H6V4z" fill="#FFF"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- FAQs Section --- -->
+  <section id="faqs" class="section">
+    <div class="container section-header text-center reveal-on-scroll">
+      <span class="badge-tag">Got Questions?</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about our printable T-shirt graphic pack.</p>
+    </div>
+
+    <div class="container faq-container">
+      <!-- FAQ 1 -->
+      <div class="faq-item reveal-on-scroll stagger-1">
+        <button class="faq-trigger">
+          <span class="faq-question">What do I receive after purchase?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            You will receive instant access to high-quality digital files hosted on secure cloud storage. A download button is displayed immediately after checkout. The files contain high-resolution transparent PNG images (300 DPI) and editable vector file formats (SVGs/PDFs) sorted cleanly by categories. No physical product will be shipped.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item reveal-on-scroll stagger-2">
+        <button class="faq-trigger">
+          <span class="faq-question">Can I use these designs commercially?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            Yes, absolutely. A lifetime commercial license is included in your purchase. You may print these designs on physical products (such as T-shirts, sweatshirts, totes, caps, mugs) and sell them on Etsy, Shopify, Whop, Amazon, or in physical retail stores. Sharing, reselling, or redistributing the digital files themselves is strictly prohibited.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item reveal-on-scroll stagger-3">
+        <button class="faq-trigger">
+          <span class="faq-question">Are the backgrounds of the designs transparent?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            Yes. The master design assets are delivered with transparent backgrounds in PNG format, allowing you to print them on garments of any color (black, white, grey, or pastel colors) without any ugly solid borders or rectangular backgrounds.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item reveal-on-scroll stagger-4">
+        <button class="faq-trigger">
+          <span class="faq-question">I can't download my files. What should I do?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            Don't worry! If you face any issues with download limits, bandwidth, or zip extractions, please reach out to us at techosis99@gmail.com and we will assist you immediately to resolve the issue and provide alternative direct links.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="faq-item reveal-on-scroll stagger-5">
+        <button class="faq-trigger">
+          <span class="faq-question">What printing methods do these support?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p class="faq-answer">
+            Because our designs are rendered at a crisp 300 DPI and provided in vector SVG formats, they are fully compatible with Direct-To-Garment (DTG), Screen Printing (silk screening separations), Direct-To-Film (DTF), Heat Transfer Vinyl (HTV), and sublimation printing workflows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Centered Minimal Footer --- -->
+  <footer class="footer" style="padding: 4rem 0 3rem 0; text-align: center;">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+      <a href="#" class="logo" style="color: white; margin-bottom: 0.5rem; justify-content: center;">
+        <img src="companylogo.png" alt="Techosis Digital Products Logo" class="logo-img" style="filter: brightness(0.95); border-color: rgba(255,255,255,0.15); background-color: white;">
+        <span class="logo-text" style="color: white;">TECHOSIS DIGITAL PRODUCTS</span>
+      </a>
+      
+      <p style="font-size: 0.85rem; color: var(--color-text-light-muted); max-width: 500px; line-height: 1.6;">
+        Premium digital products and curated art libraries. Instantly downloadable and printable worldwide.<br>
+        Contact: techosis99@gmail.com
+      </p>
+
+      <div style="border-top: 1px solid var(--color-border-dark); width: 100%; max-width: 600px; padding-top: 1.5rem; margin-top: 0.5rem;">
+        <p style="font-size: 0.8rem; color: var(--color-text-light-muted);">&copy; 2026 Techosis Digital Products. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="tshirt.js"></script>
+</body>
+</html>
