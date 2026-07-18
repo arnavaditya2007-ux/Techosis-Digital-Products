@@ -1429,6 +1429,12 @@ img {
     padding: 1.5rem;
     min-height: auto;
   }
+
+  .poster-collage {
+    height: 380px;
+    transform: scale(0.8);
+    transform-origin: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1440,5 +1446,9 @@ img {
   }
   .checkout-pane {
     padding: 2rem 1.25rem;
+  }
+  .poster-collage {
+    height: 300px;
+    transform: scale(0.65);
   }
 }
