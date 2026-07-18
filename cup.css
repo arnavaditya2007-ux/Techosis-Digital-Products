@@ -74,6 +74,7 @@ body {
 
 .section {
   padding: 8rem 0;
+  scroll-margin-top: 90px;
 }
 
 .section-secondary {

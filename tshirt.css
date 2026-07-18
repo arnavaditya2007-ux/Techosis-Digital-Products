@@ -135,6 +135,7 @@ img {
 
 .section {
   padding: 8rem 0;
+  scroll-margin-top: 90px;
 }
 
 .section-secondary {
@@ -1441,6 +1442,19 @@ img {
     transform: scale(0.8);
     transform-origin: center;
   }
+
+  .poster-1 {
+    transform: rotate(-4deg) translate(0, 0);
+  }
+  .poster-2 {
+    transform: rotate(6deg) translate(40px, 10px);
+  }
+  .poster-3 {
+    transform: rotate(-12deg) translate(-40px, 15px);
+  }
+  .poster-1:hover { transform: rotate(0deg) translate(0, 0) scale(1.05); }
+  .poster-2:hover { transform: rotate(0deg) translate(40px, 10px) scale(1.05); }
+  .poster-3:hover { transform: rotate(0deg) translate(-40px, 15px) scale(1.05); }
 }
 
 @media (max-width: 576px) {
@@ -1457,4 +1471,12 @@ img {
     height: 300px;
     transform: scale(0.65);
   }
+  .poster-2 {
+    transform: rotate(6deg) translate(25px, 8px);
+  }
+  .poster-3 {
+    transform: rotate(-12deg) translate(-25px, 12px);
+  }
+  .poster-2:hover { transform: rotate(0deg) translate(25px, 8px) scale(1.05); }
+  .poster-3:hover { transform: rotate(0deg) translate(-25px, 12px) scale(1.05); }
 }
