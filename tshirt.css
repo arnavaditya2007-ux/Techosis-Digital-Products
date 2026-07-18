@@ -1378,6 +1378,12 @@ img {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 0;
+  }
+  .nav-container {
+    height: auto;
+  }
   .logo-text {
     font-size: 0.85rem;
   }

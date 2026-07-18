@@ -1139,7 +1139,7 @@ body {
     position: relative;
   }
 
-  .nav-flex {
+  .header .nav-flex {
     flex-direction: column;
     height: auto;
     padding: 1.25rem 0.5rem 1.75rem 0.5rem;
