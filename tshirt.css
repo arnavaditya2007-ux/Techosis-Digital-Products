@@ -315,6 +315,7 @@ img {
   font-weight: 800;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -1376,6 +1377,13 @@ img {
 }
 
 @media (max-width: 768px) {
+  .logo-text {
+    font-size: 0.85rem;
+  }
+  .logo-img {
+    width: 30px;
+    height: 30px;
+  }
   .navbar .nav-links {
     display: none; /* Mobile menu can collapse or simplify */
   }
