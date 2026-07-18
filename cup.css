@@ -1141,15 +1141,38 @@ h1, h2, h3, h4, h5, h6, .logo-text, .section-title, .hero-title, .price-sale, .s
     padding: 7.5rem 0 4rem 0;
     min-height: auto;
   }
-  
+
+  .hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hero-ctas {
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     width: 100%;
+    max-width: 320px;
   }
   .hero-ctas .btn {
     width: 100%;
     text-align: center;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .showcase-grid {
+    gap: 1.5rem;
+    transform: scale(0.85);
+    transform-origin: center;
   }
   
   .step-grid, .footer-grid {
@@ -1173,7 +1196,14 @@ h1, h2, h3, h4, h5, h6, .logo-text, .section-title, .hero-title, .price-sale, .s
   
   .trust-flex {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .trust-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
   }
 
   .visualizer-room {
@@ -1495,5 +1525,12 @@ h1, h2, h3, h4, h5, h6, .logo-text, .section-title, .hero-title, .price-sale, .s
   }
   .pricing-info-pane {
     padding: 2rem 1.25rem;
+  }
+  .showcase-grid {
+    gap: 0.75rem;
+    transform: scale(0.55);
+    transform-origin: center;
+    margin-top: -3.5rem;
+    margin-bottom: -3.5rem;
   }
 }
