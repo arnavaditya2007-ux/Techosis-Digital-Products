@@ -59,11 +59,15 @@
   font-family: var(--font-sans);
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 .container {

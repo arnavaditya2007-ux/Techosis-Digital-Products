@@ -87,9 +87,13 @@ input, textarea {
   cursor: text !important;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   font-size: 16px;
@@ -97,7 +101,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   position: relative;
 }
 
