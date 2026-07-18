@@ -674,8 +674,9 @@ img {
 /* Rectangular design canvas showcase replacing cartoon T-shirt silhouette */
 .tee-shirt-canvas {
   position: relative;
-  width: 320px;
-  height: 420px;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 320 / 420;
   border-radius: 6px;
   background-color: #ffffff; /* Default background tone */
   transition: background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1388,6 +1389,11 @@ img {
     display: none; /* Mobile menu can collapse or simplify */
   }
 
+  .hero {
+    padding: 7.5rem 0 4rem 0;
+    min-height: auto;
+  }
+
   .hero-cta-group {
     flex-direction: column;
     gap: 1rem;
@@ -1417,5 +1423,22 @@ img {
 
   .checkout-pane {
     padding: 2rem;
+  }
+
+  .visualizer-preview-pane {
+    padding: 1.5rem;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  .purchase-card-container {
+    padding: 2rem 1.25rem;
+  }
+  .checkout-pane {
+    padding: 2rem 1.25rem;
   }
 }
